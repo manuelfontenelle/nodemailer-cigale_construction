@@ -29,10 +29,10 @@ app.post("/form-estimate", async (req, res, next) => {
 		})
 
 		let info = await transporter.sendMail({
-			from: `Contact - Cigale Construction <${email}>`, // sender address
+			from: `Contact Estimation - Cigale Construction <${email}>`, // sender address
 			to: "manuel.fontenelle@gmail.com", // list of receivers
 			replyTo: `${email}`,
-			subject: "Contact", // Subject line
+			subject: "Contact Estimation", // Subject line
 			text: "test", // plain text body
 			html: `Prénom :${prenom}<br/><br/> Nom :${nom}<br/><br/> Phone :${phone}<br/><br/> Adresse : ${adresse}<br/><br/> Message : ${message}<br/><br/> E-mail : ${email}<br/><br/> StartDate : ${startDate}<br/><br/>`, // html body
 		})
@@ -72,10 +72,10 @@ app.post("/form-estimate_attachment", async (req, res, next) => {
 		})
 
 		let info = await transporter.sendMail({
-			from: `Contact - Cigale Construction <${email}>`, // sender address
+			from: `Contact Estimation - Cigale Construction <${email}>`, // sender address
 			to: "manuel.fontenelle@gmail.com", // list of receivers
 			replyTo: `${email}`,
-			subject: "Contact", // Subject line
+			subject: "Contact Estimation", // Subject line
 			text: "test", // plain text body
 			html: `Prénom :${prenom}<br/><br/> Nom :${nom}<br/><br/> Phone :${phone}<br/><br/> Adresse : ${adresse}<br/><br/> Message : ${message}<br/><br/> E-mail : ${email}<br/><br/> StartDate : ${startDate}<br/><br/>`, // html body
 			attachments: [
@@ -121,10 +121,10 @@ app.post("/form-career", async (req, res, next) => {
 		})
 
 		let info = await transporter.sendMail({
-			from: `Contact - Cigale Construction <${email}>`, // sender address
+			from: `Contact Carrière - Cigale Construction <${email}>`, // sender address
 			to: "manuel.fontenelle@gmail.com", // list of receivers
 			replyTo: `${email}`,
-			subject: "Contact", // Subject line
+			subject: "Contact Carrière", // Subject line
 			text: "test", // plain text body
 			html: `Prénom :${prenom}<br/><br/> Nom :${nom}<br/><br/> Phone :${phone}<br/><br/> Message : ${message}<br/><br/> E-mail : ${email}`, // html body
 		})
@@ -164,10 +164,10 @@ app.post("/form-career_attachment", async (req, res, next) => {
 		})
 
 		let info = await transporter.sendMail({
-			from: `Contact - Cigale Construction <${email}>`, // sender address
+			from: `Contact Carrière - Cigale Construction <${email}>`, // sender address
 			to: "manuel.fontenelle@gmail.com", // list of receivers
 			replyTo: `${email}`,
-			subject: "Contact", // Subject line
+			subject: "Contact Carrière", // Subject line
 			text: "test", // plain text body
 			html: `Prénom :${prenom}<br/><br/> Nom :${nom}<br/><br/> Phone :${phone}<br/><br/> Message : ${message}<br/><br/> E-mail : ${email}`, // html body
 			attachments: [
